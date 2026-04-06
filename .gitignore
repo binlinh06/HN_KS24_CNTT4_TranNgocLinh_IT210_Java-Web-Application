@@ -1,0 +1,8 @@
+# 1. Bỏ qua tất cả mọi thứ trong project
+*
+
+# 2. Ngoại trừ thư mục src (cho phép đẩy thư mục này và nội dung bên trong)
+!src/
+
+# 3. (Tùy chọn) Ngoại trừ chính file .gitignore để lưu lại quy tắc này trên Git
+!.gitignore
