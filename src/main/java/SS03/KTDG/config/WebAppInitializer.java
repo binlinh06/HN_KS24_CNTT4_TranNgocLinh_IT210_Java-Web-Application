@@ -1,22 +1,21 @@
-package SS02.hw01;
+package SS03.KTDG.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class MyWebAppInitializer
-        extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return null; // Không cần root config
+        return null;
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] { WebConfig.class }; // Config chính
+        return new Class[]{WebConfig.class};
     }
 
     @Override
     protected String[] getServletMappings() {
-        return new String[] { "/" }; //
+        return new String[]{"/"};
     }
 }
